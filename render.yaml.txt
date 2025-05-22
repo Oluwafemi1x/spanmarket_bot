@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: spanmarket-bot
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: ""
+    startCommand: python spanmarket_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_TELEGRAM_BOT_TOKEN
